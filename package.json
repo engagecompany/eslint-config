@@ -1,7 +1,7 @@
 
 {
   "name": "@engboxcrm/eslint-config",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Configurações ESLint compartilhadas dos projetos Engbox.",
   "type": "module",
   "license": "MIT",
@@ -20,13 +20,34 @@
     "LICENSE"
   ],
   "exports": {
-    ".": "./src/index.js",
-    "./base": "./src/configs/base.js",
-    "./typescript": "./src/configs/typescript.js",
-    "./react": "./src/configs/react.js",
-    "./react-native": "./src/configs/react-native.js",
-    "./node": "./src/configs/node.js",
-    "./prettier": "./src/prettier.js"
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./base": {
+      "types": "./src/configs/base.d.ts",
+      "import": "./src/configs/base.js"
+    },
+    "./typescript": {
+      "types": "./src/configs/typescript.d.ts",
+      "import": "./src/configs/typescript.js"
+    },
+    "./react": {
+      "types": "./src/configs/react.d.ts",
+      "import": "./src/configs/react.js"
+    },
+    "./react-native": {
+      "types": "./src/configs/react-native.d.ts",
+      "import": "./src/configs/react-native.js"
+    },
+    "./node": {
+      "types": "./src/configs/node.d.ts",
+      "import": "./src/configs/node.js"
+    },
+    "./prettier": {
+      "types": "./src/prettier.d.ts",
+      "import": "./src/prettier.js"
+    }
   },
   "engines": {
     "node": ">=20.9.0"
