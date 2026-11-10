@@ -1,7 +1,7 @@
 
 {
   "name": "@engboxcrm/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Configurações ESLint compartilhadas dos projetos Engbox.",
   "type": "module",
   "license": "MIT",
